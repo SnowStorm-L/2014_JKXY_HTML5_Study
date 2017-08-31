@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年02月21日21:29:29-->
+    <title>form表单和PHP交互</title>
+</head>
+<body>
+    <!--
+    action具体提交到哪个服务器的地址,method请求方式
+    get会把信息拼接到地址栏中,post不会
+    get可以做资源定位
+    淘宝链接举例,只取商品id就可以定位到
+    https://item.taobao.com/item.htm?spm=a1z10.5-c-s.w4002-15941605149.15.YPj141&id=541243317544
+    https://item.taobao.com/item.htm?id=541243317544
+    -->
+
+    <form action="http://localhost/Service.php" method="post">
+        用户名:<input type="text" name="name" title="用户名" >
+        密  码:<input type="password" name="password" title="密码">
+        <br/>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

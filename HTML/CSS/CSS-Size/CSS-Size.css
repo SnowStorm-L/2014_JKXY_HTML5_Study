@@ -1,0 +1,16 @@
+p {
+    width: 400px;
+}
+
+.p1_class {
+   line-height: normal;
+    min-width: 300px;
+}
+
+.p2_class {
+    line-height: 200%;
+}
+
+.p3_class {
+    line-height: 50%;
+}

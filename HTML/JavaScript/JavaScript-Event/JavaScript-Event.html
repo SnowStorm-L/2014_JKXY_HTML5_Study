@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年3月26日16:37:05-->
+    <title>JavaScript事件</title>
+    <script src="JavaScript-Event.js"></script>
+    <link rel="stylesheet" href="JavaScript-Event.css" type="text/css">
+
+</head>
+<body onload="alert('网页加载完成')">
+    <!--
+    1、什么是事件：
+        事件是可以被JavaScript侦测到的行为
+
+        事件                              描述
+        onclick                         单击事件
+        onmouseover                     鼠标经过事件
+        onmouseout                      鼠标移出事件
+        onchange                        文本内容改变事件
+        onselect                        文本框选中事件
+        onfocus                         光标聚集事件
+        onblur                          移开光标事件
+        onload                          网页加载事件
+        onunload                        关闭网页事件(没用出效果)
+    -->
+    <button onclick="alertHello()">按钮</button>
+
+    <div class="div_class" onmouseover="overChangeColor(this)" onmouseout="outChangeColor(this)"></div>
+
+    <form>
+        <input type="text" title="" onchange="textHadChange(this)">
+        <br/>
+        <input type="text" title="" onselect="textHadSelected()">
+        <br/>
+        <input type="text" title="" onfocus="textBeginEditing()">
+    </form>
+
+</body>
+</html>

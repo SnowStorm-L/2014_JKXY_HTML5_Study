@@ -1,0 +1,23 @@
+#position_1 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    z-index: 2;
+}
+
+#position_2 {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    /*
+    本来是在postion1上面的,改变z-index
+    谁的值大,谁在页面最顶层
+    */
+    z-index: 1;
+}

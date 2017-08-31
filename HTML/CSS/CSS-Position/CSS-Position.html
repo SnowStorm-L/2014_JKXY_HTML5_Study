@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年3月11日09:48:47-->
+    <title>CSS定位(position)</title>
+    <link rel="stylesheet" href="CSS-Position.css" type="text/css">
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <!--
+    1、CSS定位:
+        改变元素在页面上的位置
+    2、CSS定位机制:
+        普通流:元素按照其在HTML中的位置顺序决定排布的过程
+        浮动
+        绝对
+    3、CSS定位属性:
+        属性              描述
+       position         把元素放在一个静态的、相对的、绝对的、或者固定的位置中
+       top、right、bottom、left    元素向上、右、下、左偏移
+       overflow         设置元素溢出其区域发生的事情
+       clip             设置元素显示的形状
+       vertical-align   设置元素垂直对齐方式
+       z-index          设置元素的堆叠顺序
+
+    1、CSS position属性:  有以下4个值
+
+           static      默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+
+           relative    生成相对定位的元素，相对于其正常位置进行定位。
+                       因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+
+           absolute    生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+                       元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+
+           fixed       生成绝对定位的元素，相对于浏览器窗口进行定位。
+                       元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+
+           inherit     规定应该从父元素继承 position 属性的值。
+
+    -->
+
+    <div id="position_1"></div>
+    <div id="position_2"></div>
+    <script>
+        for(var i=0; i<100; i++) {
+            document.write(i+"<br/>")
+        }
+    </script>
+
+</body>
+</html>

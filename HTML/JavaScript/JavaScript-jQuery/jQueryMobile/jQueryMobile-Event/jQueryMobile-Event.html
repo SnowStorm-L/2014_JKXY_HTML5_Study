@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src = "../../jquery.min.js"></script>
+    <script src = "../../jquery.mobile-1.4.5.min.js"></script>
+    <link rel = "stylesheet" href = "../../jquery.mobile-1.4.5.min.css" type = "text/css">
+    <script>
+        $(document).on({
+            pageinit: function() {
+            alert('pageinit');
+            $('p').on({
+                tap: function() {
+                    console.log('tap');
+                },
+                taphold: function() {
+                    console.log('taphold');
+                },
+                swipe: function() { // swipe left,right
+                    console.log('swipe');
+                }
+            })},
+            scrollstart: function() {
+                console.log('scrollstart');
+            },
+            scrollstop: function() {
+                console.log('scrollstop');
+            }
+        });
+    </script>
+</head>
+<body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Header</h1>
+        </div>
+        <div data-role="content">
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+            <p>Content</p>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>

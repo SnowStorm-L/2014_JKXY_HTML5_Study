@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <!-- 2017年08月14日14:35:25 -->
+    <title>Web存储</title>
+    <script src="WebStorage.js"></script>
+</head>
+<body>
+
+    <!--
+    客户端存储数据新方法
+        1,两种方式
+            (1) localStorage - 没有时间限制的数据存储
+            (2) sessionStorage - 针对一个session的数据存储(当浏览器关闭时,数据就被清除)
+        2,与cookie做对比
+            之前,这些都是由cookie完成的。但是cookie不适合大量数据的存储。
+            因为它们由每个对服务器的请求来传递,这使得cookie速度慢而且效率不高
+    -->
+
+    <!--
+    localStorage
+        1、存储特点:
+            localStorage方法存储的数据没有时间限制。第二天、第二周或下一年之后,数据依然可用
+    -->
+
+    <!--
+    sessionStorage
+        1,存储特点:
+            sessionStorage方法针对一个session进行数据存储。
+            当用户关闭浏览器窗口后,数据会被删除
+    -->
+
+    <textarea name = "" id = "textarea" cols = "30" rows = "10"
+              style="width: 200px; height: 200px">
+    </textarea>
+
+    <button id="button">Save</button>
+
+    <br/><br/>
+
+    <span id="span">0</span>
+    <button id="addBtn">Add</button>
+
+</body>
+</html>

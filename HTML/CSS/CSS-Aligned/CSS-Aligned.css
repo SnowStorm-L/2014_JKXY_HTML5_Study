@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+
+.div_class {
+    width: 70%;
+    height: 1000px;
+    background-color: red;
+    margin: 100px auto;
+}

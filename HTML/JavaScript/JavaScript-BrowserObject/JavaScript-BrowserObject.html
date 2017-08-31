@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <!-- 2017年08月09日21:29:13 -->
+    <title>浏览器对象</title>
+</head>
+<body>
+    <!--
+        Window对象,所有页面的根基
+            1,window对象:
+                window是BOM的核心,window对象指当前的浏览器窗口
+                所有JavaScript全局对象、函数以及变量均自动成为window对象的成员
+                全局变量是window对象的属性
+                全局函数是window对象的方法
+                甚至HTML DOM的document也是window对象的属性之一
+            2,window尺寸:
+                window.innerHeight - 浏览器窗口的内部高度
+                window.innerWidth  - 浏览器窗口的内部宽度
+            3,window方法:
+                window.open() - 打开新窗口
+                window.close() - 关闭当前窗口
+    -->
+
+    <button id="btn" onclick="btnCilckd()">按钮</button>
+
+    <script>
+        document.write("width" + window.innerWidth + "height" + window.innerHeight + "<br/>");
+
+        function btnCilckd() {
+            window.open("https://translate.google.cn/#zh-CN/en", "谷歌", "height = 200, width = 200");
+            //window.close();
+        }
+    </script>
+
+    <br/><br/>
+
+    <!--
+    计时器
+        1,计时事件:
+            通过使用JavaScript,我们有能力做到在一个设定的时间间隔之后来执行代码。
+            而不是在函数被调用后立刻执行,我们称之为计时事件
+        2,计时方法:
+            (1) setInterval() - 间隔指定的毫秒数不停地执行指定的代码
+                clearInterval() - 用于停止 setInterval()方法执行的函数代码
+            (2) setTimeout() - 暂停指定的毫秒数后执行指定的代码
+                clearTimeout() - 用于停止执行setTimeout()方法的函数代码
+    -->
+
+    <p id="p_time"></p>
+
+    <script>
+
+       /* var myTime = setInterval(function() {
+            getTime();
+        }, 1000);
+
+        function getTime() {
+            var date = new Date();
+            var str = date.toLocaleTimeString();
+            document.getElementById("p_time").innerHTML = str;
+        }
+
+        // 按钮触发
+        function stopTime() {
+            clearInterval(myTime);
+        }*/
+        
+    </script>
+
+    <br/><br/>
+
+    <!--
+    History对象
+        1、History对象:
+            window.history对象包含浏览器的历史(URL)的集合
+        2、History方法:
+            history.back() - 与在浏览器点击后退按钮相同
+            history.forward() - 在与浏览器中点击按钮向前相同
+            history.go() - 进入历史中的某个页面
+    -->
+
+    <form action = "">
+        <input type = "text" id="username">
+        <button id = "login" onclick="safe()">登录</button>
+    </form>
+
+
+    <script>
+        function safe() {
+            var name = document.getElementById("username").value;
+            if (name == "lu") {
+                window.history.go(-1);
+            } else {
+                alert("输入错误");
+            }
+        }
+    </script>
+
+    <br/><br/>
+
+    <!--
+    Location对象
+        1、Location对象:
+            window.location 对象用与获得当前页面的地址(URL),并把浏览器重定向到新的页面。
+        2、Location对象的属性:
+            location.hostname  返回web主机的域名
+            location.pathname  返回当前页面的路径和文件名
+            location.port      返回web主机的端口
+            location.protocol  返回所使用的web协议(http://或https://)
+            location.href      属性   返回当前页面的URL
+            location.assign()  方法   加载新的文档
+    -->
+
+    <button id="location_btn" onclick="getLocation()">location_btn</button>
+    <p id="location_p"></p>
+    <script>
+        function getLocation() {
+            var hostName = "域名:" + location.hostname + "<br/>";
+            var pathname = "当前页面的路径和文件名:" + location.pathname + "<br/>";
+            var port     = "端口:" + location.port + "<br/>";
+            var protocol = "协议:" + location.protocol + "<br/>";
+            var href     = "当前页面的URL:" + location.href + "<br/>";
+            document.getElementById("location_p").innerHTML = hostName + pathname + port + protocol + href;
+            location.assign("https://stackoverflow.com"); // 重定义
+        }
+    </script>
+
+    <br/><br/>
+
+    <!--
+    Screen对象
+        1,Screen对象
+            window.screen 对象包含有关用户屏幕的信息
+        2,属性:
+            screen.availHeight  - 可用的屏幕高度
+            screen.availWidth   - 可用的屏幕宽度
+            screen.height       - 屏幕高度
+            screen.width        - 屏幕宽度
+    -->
+
+    <script>
+        document.write("可用屏幕高度:" + screen.availHeight + "可用屏幕宽度:" + screen.availWidth + "<br/>");
+        document.write("屏幕高度:" + screen.height + "屏幕宽度:" + screen.width);
+    </script>
+
+</body>
+</html>

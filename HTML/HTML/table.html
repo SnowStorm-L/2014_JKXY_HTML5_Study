@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年02月17日23:45:11-->
+    <title>table(HTML表格)</title>
+</head>
+<body>
+    <!--  表格        描述
+         <table>     定义表格
+         <caption>   定义表格标题
+         <th>        定义表格的表头(和td不同的是一般用于表格的第一个,有加粗效果)
+         <tr>        定义表格的行
+         <td>        定义表格的单元(内容)
+
+         应用了thead/tbody/tfoot以后，就“从头到脚”显示，不管你的行代码顺序如何。
+         也就是说如果thead写在了tbody的后面，html显示时，还是以先thead后tbody显示。
+         <thead>     定义表格的页眉
+         <tbody>     定义表格的主体
+         <tfoot>     定义表格的页脚
+
+         <colspan>   定义表格可横跨的列数。
+         <colgroup>  注释：colgroup 元素只能包含 col 元素。
+                     注释：colgroup 元素无法创建表格列。如需创建列，必须在 tr 元素内规定 td 元素。
+                     提示：如果需要向一个列组规定相同的属性值，请使用该元素。
+                     提示：如果需要为一个或多个列规定属性值，请使用 col 元素。
+
+         col 的作用是细化 colgroup，因为即使在一个组中，列与列之间也可能会出现一些差别，这时就得用到 col 了。
+         <col>       标签规定了 <colgroup> 元素内部的每一列的列属性
+    -->
+
+
+    <!--
+        1、没有边框的表格
+        2、表格中的表头
+        3、空单元格
+        4、带有标题的表格
+        5、表格内的标签
+        6、单元格边框
+        7、单元格间距
+        8、表格内的背景颜色和图像
+        9、单元格内容排列
+        10、跨行和跨列单元格
+     -->
+
+
+    <table border="1" >
+        <tr>
+            <td>表格1</td>
+            <td>表格2</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>苹果</li>
+                    <li>菠萝</li>
+                    <li>香蕉</li>
+                </ul>
+            </td>
+            <td>
+                我想吃了
+            </td>
+        </tr>
+    </table>
+
+    <br/>
+
+    <table width="400px" border="1" cellpadding="1" cellspacing="1" bgcolor="#7fff00" style="background-image: url(../img/bd_logo1.png)">
+
+        <caption>学生成绩表</caption>
+        <!--th字体加粗效果,表头-->
+        <tr><th>学号</th><th>期中</th><th>期末</th><th>总评</th></tr>
+
+        <tr><td>20094401</td><td></td><td>90</td><td>100</td></tr>
+
+        <tr><td>20094402</td><td>70</td><td>88</td><td>95</td></tr>
+
+        <tr><td>20094403</td><td>90</td><td>92</td><td>90</td></tr>
+
+        <tr><th>备注</th><td colspan="3">所有学生考核合格</td></tr>
+
+    </table>
+
+    <table border="1">
+        <colgroup>
+            <!--只有 Internet Explorer 和 Opera 支持 align 属性-->
+            <col span="2" style="background-color:red">
+            <col style="background-color:yellow">
+        </colgroup>
+        <!--
+        <colgroup span="3" valign="top">
+            <col width="50"></col>
+            <col align="center"></col>
+            <col valign="middle"></col>
+        </colgroup>
+        -->
+        <tr>
+            <th>ISBN</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>3476896</td>
+            <td>My first HTML</td>
+            <td>$53</td>
+        </tr>
+        <tr>
+            <td>5869207</td>
+            <td>My first CSS</td>
+            <td>$49</td>
+        </tr>
+    </table>
+
+
+    <table border="1">
+        <thead style="color: green">
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        </thead>
+        <tbody style="color: blue;height: 50px">
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$80</td>
+        </tr>
+        </tbody>
+        <tfoot style="color: red">
+        <tr>
+            <td>Sum</td>
+            <td>$180</td>
+        </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

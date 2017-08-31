@@ -1,0 +1,65 @@
+/*
+通配符
+如果其它标签没有设置和通配符相同的属性
+那么其他标签将按照通配符设置的属性
+如果标签设置了和通配符相同的属性,标签的属性优先
+不用写标签,直接写文字也会影响到
+*/
+* {
+    /*color: red;*/
+    font-size: 20px;
+
+    /*通常会使用的,去掉边距*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+}
+
+p {
+    /*color: aqua;*/
+}
+
+h1,h2 {
+    color: yellow;
+}
+
+a.div_class {
+    color: green;
+}
+
+.p1_class {
+    color: purple;
+}
+
+.p2_class {
+    font-size: 30px;
+}
+
+.p1_class.p2_class {
+    font-style: italic;
+}
+
+#id_div {
+    color: purple;
+}
+
+/* ~= 只要包含title 的都生效  */
+[title~="title"] {
+    color: red;
+}
+
+[href="https://www.baidu.com"] {
+    font-size: 30px;
+}
+
+/*p strong i {*/
+    /*color: fuchsia;*/
+/*}*/
+
+p>strong>i {
+   color: fuchsia;
+}
+
+li+li {
+    font-size: 50px;
+    color: orange;
+}

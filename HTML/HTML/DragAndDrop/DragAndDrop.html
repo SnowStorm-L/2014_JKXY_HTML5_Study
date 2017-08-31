@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <!-- 2017年08月12日10:45:15 -->
+    <title>拖放</title>
+    <script src="DragAndDrop.js"></script>
+</head>
+<body>
+    <!--
+        HTML5拖放
+            1,HTML5拖放:
+                拖放(Drag和drop)是HTML5标准的组成部分
+            2,拖动开始:
+                ondragstart: 调用了一个函数,drag(event),它规定了被拖动的数据
+            3,设置拖动数据:
+                setData(): 设置被拖数据的数据类型和值
+            4,放入位置:
+                ondragover: 事件规定在何处放置被拖动的数据
+            5,放置:
+                ondrop: 当放置被拖数据时,会发生drop事件
+    -->
+
+
+    <div id="box1" class="box"></div>
+    <div id="box2" class="box"></div>
+    <img id="originImg" src = "../../img/DOM图解.png" alt = "">
+    <div id="msg"></div>
+
+    <style>
+        
+        .box {
+            width: 400px;
+            height: 400px;
+        }
+        
+        #box1 {
+            float: left;
+            background-color: #cccccc;
+        }
+
+        #box2 {
+            float: left;
+            background-color: aqua;
+        }
+
+    </style>
+
+    <br/><br/>
+
+    <div id="imgContainer"></div>
+
+    <style>
+        #imgContainer {
+            background-color: #cccccc;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+
+
+</body>
+</html>

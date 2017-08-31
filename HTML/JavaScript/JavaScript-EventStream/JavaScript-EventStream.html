@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年08月07日21:25:43-->
+    <title>JavaScript事件流</title>
+
+</head>
+<body>
+    <!--
+    事件流
+        1、事件流:
+            描述是在页面中接受事件的顺序
+        2、事件冒泡:
+            由最具体的元素接收,然后逐级向上传播至最不具体的元素的节点(文档)
+        3、事件捕获:
+            最不具体的节点先接收事件,而最具体的节点应该是最后接收事件
+    -->
+
+    <div id = "div">
+        <button id = "btn1" onclick = "demo()">按钮</button>
+    </div>
+
+    <!--
+    事件处理
+        1、HTML事件处理:
+            直接添加到HTML结构中
+        2、DOM  0级事件处理
+            把一个函数赋值给一个事件处理程序属性
+        3、DOM  2级事件处理
+            addEventListener("事件名","事件处理函数","布尔值")
+            true: 事件捕获
+            false: 事件冒泡
+            removeEventListener();
+        4、IE事件处理程序(版本<=8)
+            attachEvent  添加一个事件
+            detachEvent  移除一个事件
+    -->
+
+
+   <!--
+   1、e.g.
+    <script>
+        function demo() {
+            alert("hello html事件处理");
+        }
+    </script>
+    -->
+
+    <!--
+    2、e.g.
+    <script>
+        var btn1 = document.getElementById("btn1");
+            btn1.onclick = function() {
+                alert("hello DOM 0级事件处理1"); // 被覆盖掉
+            }
+            btn1.onclick = function() {
+                alert("hello DOM 0级事件处理2");
+            }
+            btn1.onclick = null;
+    </script>
+    -->
+
+   <!--
+   3、e.g
+   <script>
+        // 不覆盖 依次处理事件
+        var btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click", demo1);
+        btn1.addEventListener("click", demo2);
+        function demo1() {
+            alert("DOM 2级事件处理程序1");
+        }
+        function demo2() {
+            alert("DOM 2级事件处理程序2");
+        }
+    </script>
+    -->
+
+    <!--
+    4、e.g
+    <script>
+        var btn1 = document.getElementById("btn1");
+        if (btn1.addEventListener) { // 判断是否支持
+            btn1.addEventListener("click", demo);
+        } else if (btn1.attachEvent) {
+            btn1.attachEvent("onclick", demo);
+        } else {
+            btn1.onclick = demo();
+        }
+
+        function demo() {
+            alert("Hello");
+        }
+    </script>
+    -->
+
+</body>
+</html>

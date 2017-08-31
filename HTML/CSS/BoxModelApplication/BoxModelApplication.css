@@ -1,0 +1,64 @@
+
+/*通配符,把所有外边距设置成0*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.top_content {
+    width: 75%;
+    height: 50px;
+    /*边距,上下为0,左右是自适应(宽度75%,左右自适应有居中效果)*/
+    margin: 0 auto;
+    background-color: blue;
+}
+
+.body {
+    margin: 20px auto;
+    width: 75%;
+    height: 1500px;
+    background-color: blanchedalmond;
+}
+
+.body_img {
+    width: 100%;
+    height: 400px;
+    background-color: darkorange;
+}
+
+.body_content {
+    width: 100%;
+    height: 1100px;
+    background-color: blueviolet;
+}
+
+.body_notification {
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+
+.footer {
+    width: 75%;
+    height: 400px;
+    background-color: indigo;
+    margin: 0 auto;
+}
+
+.footer_content {
+    width: 100%;
+    height: 330px;
+    background-color: darkseagreen;
+}
+
+.footer_menu {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}

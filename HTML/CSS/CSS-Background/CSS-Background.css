@@ -1,0 +1,39 @@
+
+/*示例1--background-color*/
+/*body {*/
+    /*background-color: gray;*/
+/*}*/
+
+/*p {*/
+    /*width: 250px;*/
+    /*!*内边距*!*/
+    /*padding: 5px;*/
+    /*background-color: aqua;*/
+/*}*/
+
+/*body {*/
+    /*background-image: url(../img/bd_logo1.png);*/
+/*}*/
+
+/*示例2*/
+/*p {*/
+    /*width: 200px;*/
+    /*height: 100px;*/
+   /*background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488370982083&di=7166c85fb22554873168920a8c160f95&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F3b87e950352ac65c70f6afbefff2b21192138a08.jpg");*/
+/*}*/
+
+body {
+    /*默认repeat*/
+    background-repeat: no-repeat;
+    /*这个属性很少单独使用例如写个right和center*/
+    /*前面这个是代表当前图片处在视图的位置后面的代表当前图片要显示的位置*/
+    /*例如下面的例子,图片在页面中间显示,从图片的顶部开始显示*/
+    /*也可以填具体数值 0px 0px或百分比*/
+    background-position: center top;
+    /*图片不随页面滚动而消失*/
+    background-attachment: fixed;
+    /*设置图片大小*/
+    background-size: 50px 50px;
+    background-image: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1488370982083&di=7166c85fb22554873168920a8c160f95&imgtype=0&src=http%3A%2F%2Fa.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F3b87e950352ac65c70f6afbefff2b21192138a08.jpg");
+}
+

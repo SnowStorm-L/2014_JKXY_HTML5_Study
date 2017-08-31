@@ -1,0 +1,8 @@
+.div_class {
+    column-count: 4;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 20px;
+    column-gap: 20px;
+    column-rule: 5px outset red;
+    -webkit-column-rule: 5px outset red;
+}

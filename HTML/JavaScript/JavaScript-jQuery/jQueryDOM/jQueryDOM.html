@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Title</title>
+    <script src="../jquery.min.js"></script>
+    <script src="jQueryDOM.js"></script>
+</head>
+<body>
+
+    <!--
+        jQuery捕获内容
+        jQuery设置内容
+        jQuery添加元素
+        jQuery删除元素
+    -->
+
+    <!-- jQuery捕获内容 -->
+
+    <p id = "text">this is p
+        <a href = "#">a 标签</a>
+    </p>
+    <button id = "btn1">点击</button>
+
+    <p>
+        <input type = "text" id = "it" value="www.baidu.com">
+    </p>
+
+    <p>
+        <a href = "https://stackoverflow.com" id = "stackoverflow">stackoverflow</a>
+    </p>
+
+    <button id = "btn2">点击</button>
+
+    <br/><br/>
+
+    <!-- jQuery设置内容 -->
+
+    <p id = "p1">hello world p1</p>
+    <p id = "p2">hello world p2</p>
+    <input type = "text" id = "input_id" value="hello">
+    <br/>
+    <button id = "btn3">修改p1内容</button>
+    <button id = "btn4">修改p2标签</button>
+    <button id = "btn5">修改input的内容</button>
+
+    <br/><br/>
+
+    <a id = "a_id" href = "http://www.baidu.com">最初是百度,接下来是stackoverflows</a>
+    <button id = "btn6">修改a标签的跳转</button>
+
+    <br/><br/>
+
+    <!-- jQuery添加元素 -->
+    <p id = "p3">hello world p3</p>
+    <button id = "btn7">p3插入内容</button>
+    <button id="btn8">p3插入换行</button>
+    <button onclick="appendText()">appendText</button>
+
+    <br/><br/>
+
+    <!-- jQuery删除元素 -->
+    <div id="div" style="height: 200px; width: 200px; border: 1px solid black">
+        hello
+        <p id = "p4">hello world p4</p>
+        <p>hello p</p>
+    </div>
+    <button id="btn9">删除</button>
+
+</body>
+</html>

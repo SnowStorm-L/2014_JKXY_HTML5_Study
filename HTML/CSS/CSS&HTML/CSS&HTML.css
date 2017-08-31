@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: snow;
+}
+
+.wrapper {
+    width: 80%;
+    height: 1000px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    background-color: snow;
+    margin: 0 auto;
+}
+
+.header_nav {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.header_title {
+    float: left;
+    font-family: Arial,Helvetica, sans-serif;
+    font-size: 30px;
+    color: burlywood;
+}
+
+.header_navgationBar ul {
+    margin-left: 40px;
+    float: left;
+    list-style-type: none;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+.header_navgationBar ul>li {
+    padding-left: 10px;
+    display: inline;
+}
+
+.header_navgationBar ul>li>a:link, .header_navgationBar ul>li>a:visited {
+    font-weight: bold;
+    color: darkgray;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+}
+
+.header_navgationBar ul>li>a:hover, .header_navgationBar ul>li>a:active {
+    color: dimgray;
+}
+
+.header_img img {
+    border-radius: 30px;
+    display: inline;
+    width: 26px;
+    height:26px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+    float: right;
+}
+
+.header_soptlight form {
+    float: right;
+    width: 100px;
+    height: 26px;
+    position: relative;
+    margin-right: 50px;
+}
+
+.header_soptlight form>input {
+    height: 26px;
+    border-radius: 30px;
+}
+
+.body {
+    padding: 30px;
+    height: auto;
+    width: auto;
+}
+
+.body_title p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.body_title h3 {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+
+.waterfallsflow {
+    column-width: 210px;
+    -webkit-column-width: 210px;
+    -webkit-column-gap: 5px;
+    -moz-column-width: 210px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+
+}
+
+.waterfallsflow div {
+    width: 200px;
+
+}
+
+.waterfallsflow div>img {
+    width: 200px;
+    height: 330px;
+}
+
+.waterfallsflow p {
+    text-align: center;
+}
+
+.footer {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: darkgray;
+}
+

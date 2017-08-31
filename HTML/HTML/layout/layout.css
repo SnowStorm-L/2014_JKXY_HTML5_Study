@@ -1,0 +1,39 @@
+
+body {
+    margin: 0;
+}
+/*div可以不加*/
+div#container {
+    width: 100%;
+    height: 950px;
+    background-color: darkgray;
+}
+div#heading {
+    width: 100%;
+    /*高度已经定好了950px*/
+    height: 10%;
+    background-color: aqua;
+}
+div#content_menu {
+    width: 30%;
+    height: 80%;
+    background-color: brown;
+    /*添加浮动,从左到右.不设置的话body在menu下面*/
+    float: left;
+}
+div#content_body {
+    width: 70%;
+    height: 80%;
+    background-color: chartreuse;
+    float: left;
+}
+div#footing {
+    width: 100%;
+    height: 10%;
+    background-color: yellow;
+    /*清除浮动*/
+    /*上面设计了浮动,
+    这里不清除的话默认是跟着左右一起做浮动的,
+    它并没有在下面*/
+    clear: both;
+}

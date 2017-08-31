@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script src = "http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src = "../../jquery.mobile-1.4.5.min.js"></script>
+    <link rel = "stylesheet" href = "../../jquery.mobile-1.4.5.min.css" type = "text/css">
+</head>
+<body>
+
+    <a href="#popupBasic" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="pop">Basic Popup</a>
+    <div data-role="popup" id="popupBasic">
+        <p>This is a completely basic popup, no options set.</p>
+    </div>
+
+    <a href = "#pop" data-rel="popup" data-position-to="window" data-transition="fade">
+        <img src = "../../images/ui-icons_444444_256x240.png" class="popphoto" style="width: 20%">
+    </a>
+
+    <div data-role="popup" id="pop">
+        <a href = "#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">close</a>
+        <img src = "../../images/ui-icons_444444_256x240.png" class="popphoto" style="max-height: 512px">
+    </div>
+
+
+</body>
+</html>

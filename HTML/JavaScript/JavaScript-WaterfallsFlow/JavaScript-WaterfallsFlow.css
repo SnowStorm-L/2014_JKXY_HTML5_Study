@@ -1,0 +1,31 @@
+*{
+    /*外边距,内边距 都为0*/
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    /* 相对布局 */
+    position: relative;
+}
+
+.box {
+    /* 每张图片间隔5px */
+    padding: 5px;
+    /* 向左浮动 */
+    float: left;
+}
+
+.box_img {
+    padding: 5px;
+    /* 边框 */
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    /* 阴影 */
+    box-shadow:  0 0 5px #cccccc;
+}
+
+.box_img img {
+    width: 150px;
+    height: auto;
+}

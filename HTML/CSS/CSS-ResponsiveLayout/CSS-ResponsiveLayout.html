@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <!-- 2017年08月15日14:21:23 -->
+    <title>响应式布局</title>
+    <!-- "only screen and (max-width:640px)" 仅仅在宽度不超过640px时使用这个样式 -->
+    <link rel = "stylesheet" href = "CSS-ResponsiveLayout.css" type = "text/css"
+          media="only screen and (max-width:640px)">
+    <style>
+        @media screen and (min-width: 640px){
+            body {
+                background-color: coral;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--
+    响应式布局介绍
+    1,响应式布局:
+        响应式布局是2010年5月份提出的一个概念,简而言之,就是一个网站能够兼容多个终端
+        而不是为每个终端做一个特定的版本
+        这个概念是为解决移动互联网浏览而诞生的
+    2,优缺点:
+        优点:(1)面对不同分辨率设备灵活性强
+            (2)能够快捷解决多设备显示适应问题
+        缺点:(1)兼容各种设备工作量大,效率低下
+            (2)代码累赘,会出现隐藏无用的元素,加载时间长
+    -->
+
+    <!--
+    响应式布局基本实现
+        1,CSS中的Media Query(媒介查询):
+            设备宽高:device-width, device-height(设备的物理宽高,屏幕的大小)
+            渲染窗口的宽和高: width, height(当前展示页面的宽高,页面可以放大缩小)
+            设备的手持方向:orientation
+            设备的分辨率:resolution
+        2,使用方法:
+            外联
+            内嵌样式
+    -->
+
+
+
+</body>
+</html>

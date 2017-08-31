@@ -1,0 +1,15 @@
+p {
+    font-size: 40px;
+    font-family: fantasy;
+    enable-background: true;
+}
+
+/*用自己导入的字体*/
+/*@font-face {*/
+    /*font-family: myfont;*/
+    /*src: url();*/
+/*}*/
+
+/*div {*/
+    /*font-family: myfont;*/
+/*}*/

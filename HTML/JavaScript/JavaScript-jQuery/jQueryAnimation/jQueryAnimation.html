@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <!-- 2017年08月21日21:36:22 -->
+    <title>Title</title>
+    <script src = "../jquery.min.js"></script>
+    <script src = "jQueryAnimation.js"></script>
+</head>
+<body>
+
+    <!--
+        jQuery隐藏/显示
+        jQuery淡入淡出
+        jQuery滑动
+        jQuery动画/停止动画
+        jQuery Callback 每个动画时候后面可以加个func(方法)作为动画完成后的操作
+    -->
+
+    <!-- jQuery隐藏/显示 -->
+    <p>hello</p>
+    <button id = "hide">隐藏</button>
+    <button id = "show">显示</button>
+    <button id = "toggle">隐藏/显示</button>
+
+    <br />
+
+    <script>
+        for (var i = 0; i < 5; i++) {
+            $('<div>').appendTo(document.body);
+        }
+        ;
+        $('div').click(function() {
+            $(this).hide(2000, function() {
+                $(this).remove();
+            });
+        });
+    </script>
+
+    <style>
+        div {
+            background: #ece023;
+            width: 50px;
+            height: 50px;
+            margin: 2px;
+        }
+    </style>
+
+    <br /><br />
+
+    <!-- jQuery淡入淡出 -->
+    <button id = "fadeIn">fadeIn</button>
+    <button id = "fadeOut">fadeOut</button>
+    <button id = "fadeToggle">fadeToggle</button>
+    <button id = "fadeTo">fadeTo</button>
+    <div id = "div1" style = "width: 80px; height: 80px; display: none; background-color: aqua"></div>
+    <div id = "div2" style = "width: 80px; height: 80px; display: none; background-color: #ece023"></div>
+    <div id = "div3" style = "width: 80px; height: 80px; display: none; background-color: darkgoldenrod"></div>
+
+    <br/><br/>
+
+    <!-- jQuery滑动 -->
+    <style>
+        #content, #flipshow {
+            padding: 5px;
+            text-align: center;
+            background-color: #ece023;
+            border: solid 1px #ece023;
+        }
+        #content {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+
+    <div id = 'flipshow'>点击</div>
+    <div id = 'content'>Hello Word</div>
+
+
+</body>
+</html>

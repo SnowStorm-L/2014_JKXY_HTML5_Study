@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年3月12日10:31:33-->
+    <title>CSS浮动(float)</title>
+    <link rel="stylesheet" href="CSS-Float.css" type="text/css">
+</head>
+<body>
+    <!--
+    1、浮动:
+        float属性可用的值:
+        left、right      元素向左、右浮动
+        none             元素不浮动
+        inherit          从父级继承浮动属性
+    2、clear属性:
+        去掉浮动属性(包括继承来的属性)
+        clear属性值:
+            left、right      去掉元素向左、向右浮动
+            both             左右两侧均去掉浮动
+            inherit         从父级继承来的clear值
+    -->
+    <div id="container">
+    <div id="first_div"></div>
+    <div id="second_div"></div>
+    <div id="third_div"></div>
+    <div id="text">HelloWorld</div>
+    </div>
+
+    <br/><br/><br/><br/><br/>
+
+    <!--瀑布流效果-->
+    <div id="div_1">
+        <ul>
+            <li><img src="../../img/Float/1.jpg" alt=""></li>
+            <li><img src="../../img/Float/2.jpg" alt=""></li>
+            <li><img src="../../img/Float/3.jpg" alt=""></li>
+        </ul>
+        <ul>
+            <li><img src="../../img/Float/4.jpg" alt=""></li>
+            <li><img src="../../img/Float/5.jpg" alt=""></li>
+            <li><img src="../../img/Float/6.jpg" alt=""></li>
+        </ul>
+        <ul>
+            <li><img src="../../img/Float/7.jpg" alt=""> </li>
+            <li><img src="../../img/Float/1.jpg" alt=""> </li>
+            <li><img src="../../img/Float/2.jpg" alt=""> </li>
+        </ul>
+    </div>
+</body>
+</html>

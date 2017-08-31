@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Title</title>
+    <script src="WebWorkers.js"></script>
+</head>
+<body>
+
+    <!--
+    Web Workers
+    1,什么是Web Worker?
+        web worker 是运行在后台的JavaScript,独立于其他脚本,不会影响页面的性能
+        好比子线程处理耗时操作,完成后在主线程更新
+    2,方法:
+     postMessage() - 它用于向HTML页面传回一段消息
+     terminate() - 终止 web worker, 并释放浏览器/计算机资源
+    3,事件:
+        onmessage
+    -->
+
+    <div id="numDiv">0</div>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+
+</body>
+</html>

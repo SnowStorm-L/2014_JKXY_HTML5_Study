@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <title>Title</title>
+    <script src = "../../jquery.min.js"></script>
+    <script src = "../../jquery-ui.min.js"></script>
+    <script src = "jQueryUI-Widgets.js"></script>
+    <link rel = "stylesheet" href = "../../jquery-ui.min.css" type = "text/css">
+    <style>
+        .ui-menu:after {
+            content: '.';
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+        .ui-menu .ui-menu-item {
+            display: inline-block;
+            float: left;
+            margin: 0;
+            padding: 10px;
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Accordion 折叠效果 -->
+
+    <div id = "accordion">
+        <h3>Section 1</h3>
+        <div>
+            <p>
+                Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus,
+                molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin
+                viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+            </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+            <p>
+                Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at
+                aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non
+                quam. In suscipit faucibus urna.
+            </p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+            <p>
+                Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus
+                in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo,
+                magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+            </p>
+            <ul>
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+            </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+            <p>
+                Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean
+                lacinia mauris vel est.
+            </p>
+            <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu
+                ad litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+        </div>
+    </div>
+
+    <br /><br />
+
+    <!-- AutoComplete 自动补全 -->
+
+    <label for = "autocomplete">Select a programming language: </label>
+    <input id = "autocomplete">
+
+    <br /><br />
+
+    <!-- datepicker 日期选择 -->
+    <p>Date: <input type = "text" id = "datePicker"></p>
+
+    <br /><br />
+
+    <!-- Dialog 对话框 -->
+
+    <a id = "DialogBtn">按钮</a>
+
+    <div id = "Dialog">
+        <p>这是一个对话框Dialog</p>
+    </div>
+
+    <br /><br />
+
+    <!-- Menu 菜单 -->
+    <ul id = "menu">
+        <li>
+            <a href = "#">Java</a>
+            <ul>
+                <li><a>Java EE</a></li>
+                <li><a>Java SE</a></li>
+                <li><a>Java ME</a></li>
+            </ul>
+        </li>
+        <li>Android</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+    </ul>
+
+    <br /><br />
+
+    <!-- Progressbar 进度条 -->
+    <div id = "progressbar"></div>
+
+    <br /><br />
+
+    <!-- Slider 滑动条 -->
+    <div id = "slider"></div>
+    <span id="span">0</span>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <!-- 2017年08月11日14:23:12 -->
+    <title>音频、视频</title>
+</head>
+<body>
+    <!--
+        音频播放
+            1,Audio(音频)
+                HTML5 提供了播放音频文件的标准
+            2,control(控制器,系统提供的默认控制器)
+                control属性供添加播放、暂停和音量控件
+            3,标签:
+                <audio>   定义声音
+                <source>  规定多媒体资源,可以是多个
+    -->
+
+    <!--
+    注意：HML5 的最新标准支持 MP3， WAV 和 Ogg 音频格式。
+    视频格式只支持 MP4，WebM 和 Ogg 格式
+    ffmpeg转码命令行
+    cd 到 ffmpeg的目录  然后执行 ./ffmpeg 然后下面这步
+    /Users/luzhixiang/Desktop/ffmpeg/执行/ffmpeg -i AnimationVedio.mp4 -acodec libvorbis AnimationVedio.ogg
+    -->
+
+    <br/><br/><br/><br/><br/><br/>
+    <!-- controls="controls" -->
+    <audio id="audio_id" src = "../../Resource/梁静茹-给未来的自己.mp3">你的浏览器不支持这种格式的音频播放</audio>
+    <button onclick="play()">播放/暂停</button>
+    <script>
+        var audio = document.getElementById("audio_id");
+
+        function play() {
+            audio.paused ? audio.play() : audio.pause();
+        }
+    </script>
+
+    <!--
+    编解码工具
+        1,FFmpeg(免费,开源)
+        2,官方网址: www.ffmpeg.org
+    -->
+
+    <br/><br/><br/><br/><br/><br/>
+
+    <!--
+    视频播放
+        1、Video(视频)
+            HTML5提供了展示视频的标准
+        2,control(控制器,系统提供的默认控制器)
+            control属性供添加播放、暂停和音量控件
+        3,标签:
+            <audio>   定义声音
+            <source>  规定多媒体资源,可以是多个
+        4,属性:
+            width: 宽
+            height: 高
+    -->
+
+    <button onclick="videoPlay()">播放/暂停</button>
+    <!-- Sublime 打开没问题.... -->
+    <video id="video_id"> <!-- controls="controls" -->
+        <source src="../../Resource/AnimationVedio.ogg">
+        <source src="../../Resource/AnimationVedio.mp4">
+        你的浏览器不支持这种格式的视频播放
+    </video>
+
+    <script>
+        var video = document.getElementById("video_id");
+        function videoPlay() {
+            video.paused ? video.play() : video.pause();
+        }
+    </script>
+
+</body>
+</html>

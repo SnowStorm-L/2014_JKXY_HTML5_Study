@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年02月20日22:03:14-->
+    <title>form(HTML表单)</title>
+</head>
+<body>
+    <!--
+    表单的作用
+    1、表单用于获取不同类型的用户输入
+    2、常用表单标签
+    <form>      表单
+    <input>     输入域
+    <textare>   文本域
+    <label>     控制标签
+    <fieldset>  定义域
+    <legend>    域的标题
+    <select>    选择列表
+    <optgroup>  选项组
+    <option>    下拉列表的选项
+    <button>    按钮
+    -->
+
+    <!--
+    常用的
+    1、复选框
+    2、单选按钮
+    3、下拉列表
+    4、文本域
+    5、创建按钮
+    -->
+
+    <form action="">
+        用户名:
+        <input type="text" title="用户名">
+        密码:
+        <input type="text" title="密码">
+        <br/><br/>
+
+        你喜欢的水果有? <br/>
+
+         苹果<input type="checkbox" title="苹果">
+         香蕉<input type="checkbox" title="香蕉">
+         西瓜<input type="checkbox" title="苹果">
+        <br/><br/>
+
+        你的性别: <br/>
+        <!--name为分组,同组内的都是单选-->
+        男 <input type="radio" name="sex" title="男">
+        女 <input type="radio" name="sex" title="女">
+        <br/><br/>
+
+        请选择你常用的网站
+        <select name="" title="下拉列表">
+            <option value="">www.baidu.com</option>
+            <option value="">www.google.com</option>
+            <option value="">www.w3cschool.cc</option>
+        </select>
+        <br/><br/>
+
+        <input type="button" value="按钮">
+        <br/><br/>
+        <!--默认提交-->
+        <input type="submit" value="确定">
+        <br/><br/>
+
+        
+
+    </form>
+
+    <textarea name="" title="个人信息" cols="30" rows="10">请再此填写个人信息</textarea>
+
+</body>
+</html>

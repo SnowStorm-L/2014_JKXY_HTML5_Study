@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年3月25日14:26:23-->
+    <title>JavaScript函数</title>
+    <script src="JavaScript-Function.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <!--
+    1、函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块
+        例 实现10组数字的和
+
+    1、定义函数：
+        function 函数名（） {
+            函数体；（代码块）
+        }
+    2、注意
+        JavaScript对大小写十分敏感，所以这里的function必须小写。
+        在函数调用时，也必须按照函数的相同名称来调用函数
+
+    1、函数调用
+        函数定义好之后，不能自动执行，需要进行调用
+    2、调用方式：
+        1,在JavaScript内调用
+        2，在HTML文件中调用
+
+    1、函数参数：
+        在函数的调用中，也可以传递值，这些值被称为参数
+        例：demo(arg1,arg2)
+    2、参数的个数可以为任意多，每个参数通过“,”隔开
+    3、注意:
+        参数在传递时，其顺序必须一致
+    4、参数的意义：
+        通过传递参数的个数以及参数的类型不同完成不同的功能
+
+    1、返回值：
+        有时，我们需要将函数的值返回给调用他的方法
+        通过return语句就可以实现
+        注意：在使用return语句时，函数会停止执行，同时返回
+    -->
+
+    <form action="">
+        <input type="button" value="按钮" onclick="operate('xueye',666)">
+    </form>
+
+    <!--JavaScript加在前面不触发，看效果就把JavaScript写后面-->
+    <p id="p_id"></p>
+
+</body>
+</html>

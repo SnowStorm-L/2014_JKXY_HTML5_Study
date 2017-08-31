@@ -1,0 +1,54 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+/*移动动画*/
+
+/*.div2 {*/
+    /*!*x坐标,y坐标*!*/
+    /*transform: translate(100px, 100px);*/
+    /*-webkit-transform: translate(100px ,100px); !* safart chrome *!*/
+    /*-ms-transform: translate(100px ,100px); !* IE *!*/
+    /*-o-transform: translate(100px ,100px); !* Opera *!*/
+    /*-moz-transform: translate(100px ,100px); !* Firefox  *!*/
+/*}*/
+
+
+/*旋转动画*/
+
+/*.div2 {*/
+    /*transform: rotate(45deg);*/
+    /*-webkit-transform: rotate(45deg);*/
+/*}*/
+
+/*缩放*/
+
+/*.div2 {*/
+    /*!*宽,高、原来宽高的倍数*!*/
+    /*transform: scale(1,2);*/
+    /*-webkit-transform: scale(1,2);*/
+    /*margin: 50px;*/
+/*}*/
+
+
+/*定义沿着 X 和 Y 轴的 2D 倾斜转换。*/
+
+/*.div2 {*/
+    /*transform: skew(50deg,50deg);*/
+    /*-webkit-transform: skew(50deg,50deg);*/
+/*}*/
+
+/*定义 2D 转换，使用六个值的矩阵*/
+/*语法:matrix(n,n,n,n,n,n)*/
+
+/*.div2 {*/
+    /*-webkit-transform: matrix(0.586,0.8,-0.8,0.586,40,30);*/
+/*}*/
+
+/*定义 3D 旋转*/
+/*rotate3d(x,y,z,angle)*/
+.div2 {
+    -webkit-transform: rotate3d(1,1,1,45deg);
+}

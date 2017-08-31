@@ -1,0 +1,19 @@
+.style1 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+.style2 {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid yellow;
+}

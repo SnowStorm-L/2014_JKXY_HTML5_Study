@@ -1,0 +1,26 @@
+h3 {
+   text-indent: 0.5em;
+    text-shadow: 5px 5px 2px red;
+
+}
+
+p {
+    text-wrap: normal;
+    width: 98px;
+}
+
+div {
+    padding-left: 45%;
+}
+
+#p1_id {
+    text-transform: capitalize;
+}
+
+#p2_id {
+    text-transform: lowercase;
+}
+
+#p3_id {
+    text-transform: uppercase;
+}

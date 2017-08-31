@@ -1,0 +1,18 @@
+
+.container {
+    column-width: 210px;
+    -webkit-column-width: 210px;
+    -webkit-column-gap: 5px;
+    -moz-column-width: 210px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+
+}
+
+.container div {
+    width: 200px;
+}
+
+.container p {
+    text-align: center;
+}

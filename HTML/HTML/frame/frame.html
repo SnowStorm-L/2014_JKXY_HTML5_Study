@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--2017年02月22日21:53:08-->
+    <title>frame(HTML框架)</title>
+</head>
+
+    <!--
+    1,框架标签(frame):
+        框架对于页面的设计有着很大的作用
+    2,框架集标签(<frameset>): 不能添加在body中
+        框架集标签定于如何将窗口分割为框架
+        每一行frameset定义一系列行或列
+        rows/cols的值规定了每行或每列占据屏幕的面积
+    3,常用标签:
+        noresize:固定框架大小
+        cols:列
+        rows:行
+    4,内联框架
+        iframe
+    -->
+
+    <!--cols-->
+    <!--
+    <frameset rows="20%,30%,50%">
+        <frame src="frameFirst.html"></frame>
+        <frame src="frameSecond.html"></frame>
+        <frame src="frameThird.html"></frame>
+    </frameset>
+    -->
+
+
+    <!--frameborder外边框宽度-->
+    <!--<iframe src="frameFirst.html" frameborder="0" width="400px" height="400px">-->
+    <!--
+    验证target效果
+    First br注释掉
+    Third iframe Second
+    Second iframe First
+    frame iframe Third
+    -->
+    <br/>
+    <iframe src="frameThird.html" frameborder="0" width="800px" height="800px">
+
+    </iframe>
+
+
+</html>

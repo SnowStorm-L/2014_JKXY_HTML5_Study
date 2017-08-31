@@ -1,0 +1,290 @@
+﻿HTML基础
+
+目录
+
+1, 17/2/14 第1天学习HTML
+
+basis--<!DOCTYPE>、head、body的说明 <img>图像 <p>段落,<h1>-<h6>标题
+element--元素、标签的说明
+
+2, 17/2/15 第2天学习HTML
+
+attributes--属性的说明
+format--格式化(标签)
+style--样式(3种引入css的方法)
+
+3, 17/2/16 第3天学习HTML
+
+link--链接
+
+4, 17/2/17 第4天学习HTML
+
+table--表格
+
+5, 17/2/18 第5天学习HTML
+
+list--列表
+
+6, 17/2/19 第6天学习HTML
+
+layout--table、div布局
+block--块元素、内联元素
+
+7, 17/2/20 第7天学习HTML
+
+form--表单
+PHP_environment--PHP环境搭建
+
+8, 17/2/21 第8天学习HTML
+
+PHP_Form_Interaction -- form表单和PHP交互
+
+9, 17/2/22 第9天学习HTML
+
+frame -- HTML框架
+
+10, 17/2/23 第10天学习HTML
+
+background -- HTML背景
+
+11, 17/2/24 第11天学习HTML
+
+entity -- 实体
+XHTML -- XHTML 介绍
+
+12, 17/2/25 第12天学习HTML
+CSS -- CSS介绍
+
+13, 17/2/26 第13天学习HTML
+
+CSS -- 派生选择器Selector
+CSS -- id选择器IDSelector
+
+14， 17/2/27 第14天学习HTML
+
+CSS -- 类选择器ClassSelector
+
+15, 17/2/28 第15天学习HTML
+
+CSS -- 属性选择器PropertySelect
+
+16, 17/3/1 第16天学习HTML
+
+CSS -- 背景Background
+
+17, 17/3/2 第17天学习HTML
+
+CSS -- 文本Text
+
+18, 17/3/3 第18天学习HTML
+
+CSS -- 字体Font
+CSS -- 链接Link
+
+19, 17/3/4 第19天学习HTML
+
+CSS -- 列表List
+
+20, 17/3/5 第20天学习HTML
+
+CSS -- 表格Table
+
+21, 17/3/6 第21天学习HTML
+
+CSS -- 轮廓Contour
+
+22, 17/3/7 第22天学习HTML
+
+CSS -- 盒子模型简介BoxModel
+
+23, 17/3/8 第23天学习HTML
+
+CSS -- 内边距Padding
+CSS -- 边框border
+
+24, 17/3/9 第24天学习HTML
+
+CSS -- 外边距margin,外边距合并MarginMerge
+
+25, 17/3/10 第25天学习HTML
+
+CSS -- 盒子模型应用BoxModelApplication
+
+26, 17/3/11 第26天学习HTML
+
+CSS -- 定位Position
+
+27, 17/3/12 第27天学习HTML
+
+CSS -- 浮动Float,及其应用
+
+28, 17/3/13 第28天学习HTML
+
+CSS -- 选择器详解SelectorDetail
+
+29, 17/3/14 第29天学习HTML
+
+CSS -- 对齐Aligned(margin、position、float)
+
+30, 17/3/15 第30天学习HTML
+
+CSS -- 尺寸Size
+CSS -- 分类Classification
+
+31, 17/3/16 第31天学习HTML
+
+CSS -- 导航栏NavigationBar
+CSS -- 图片Img
+
+32, 17/3/17 第32天学习HTML
+
+CSS -- 动画2D、3D转换DimensionalAnimation
+CSS -- 动画过渡TransitionEffect
+
+33, 17/3/18 第33天学习HTML
+
+CSS -- 动画Animation
+CSS -- 多列Columns
+
+34, 17/3/19 第34天学习HTML
+
+CSS -- 瀑布流WaterfallsFlow
+
+35, 17/3/20 第35天学习HTML
+
+CSS&HTML -- HTML与CSS的实例效果
+
+36, 17/3/21 第36天学习HTML
+
+JavaScript -- Basis基础-介绍、实现、输出
+
+37, 17/3/22 第37天学习HTML
+
+JavaScript -- Grammar语法、注释
+JavaScript -- VariablesAndDataTypes变量和数据类型
+
+38, 17/3/23 第38天学习HTML
+
+JavaScript -- Operator运算符
+
+39, 17/3/24 第39天学习HTML
+
+JavaScript -- if...else,switch 条件语句ConditionalStatement
+JavaScript -- 循环语句loop statement
+
+40, 17/3/25 第40天学习HTML
+
+JavaScript -- 函数 function
+
+41， 17/3/26 第41天学习HTML
+
+JavaScript -- 事件 Event
+
+42， 17/3/27 第42天学习HTML
+
+JavaScript -- DOM
+
+43,  17/8/7 第43天学习HTML
+
+JavaScript -- 异常 Exception
+JavaScript -- 事件流处理 EventStream
+
+44,  17/8/8 第44天学习HTML
+
+JavaScript -- 事件对象 EventObject
+JavaScript -- 内置对象 EventObject
+
+45,  17/8/9 第45天学习HTML
+
+JavaScript -- DOM对象控制HTML元素详解
+JavaScript -- 浏览器对象 BrowserObject
+
+46, 17/8/10 第46天学习HTML
+
+JavaScript -- 面向对象 Object-oriented
+JavaScript -- 瀑布流 WaterfallsFlow
+
+47, 17/8/11 第47天学习HTML
+
+HTML -- 音频、视频 AudioAndVideo
+
+48, 17/8/12 第48天学习HTML 
+
+HTML -- 拖放本地资源,网页资源 DragAndDrop
+HTML -- Canvas标签 Canvas
+
+49, 17/8/13 第49天学习HTML
+
+HTML -- SVG可伸缩适量图形
+
+50, 17/8/14 第50天学习HTML
+
+HTML -- web存储 WebStorage
+HTML -- 应用缓存与WebWorkers ApplicationCache
+
+51, 17/8/15  第51天学习HTML
+CSS -- 响应式布局 ResponsiveLayout
+
+52, 17/8/16 第52天学习HTML
+JavaScript -- jQuery
+
+53, 17/8/17 第53天学习HTML
+JavaScript -- jQuery -- Event
+
+54, 17/8/18 第54天学习HTML
+JavaScript -- jQuery -- SelectorAndEvent
+
+55, 17/8/19 第55天学习HTML
+JavaScript -- jQuery -- Animation
+
+56, 17/8/20 第56天学习HTML
+JavaScript -- jQuery -- DOM
+
+57, 17/8/21 第57天学习HTML
+JavaScript -- jQuery -- CSS
+
+58, 17/8/22 第58天学习HTML
+JavaScript -- jQuery -- Traversal
+
+59, 17/8/23 第59天学习HTML
+JavaScript -- jQuery -- WaterfallsFlow
+JavaScript -- jQuery -- AJAX
+JavaScript -- jQuery -- Extends
+JavaScript -- jQueryUI
+JavaScript -- jQueryUI -- Interactions
+
+60, 17/8/24 第60天学习HTML
+JavaScript -- jQueryUI -- Widgets
+
+61, 17/8/25 第61天学习HTML
+JavaScript -- jQueryMobile
+JavaScript -- jQueryMobile -- Button
+
+62, 17/8/26 第62天学习HTML
+JavaScript -- jQueryMobile -- Checkbox
+JavaScript -- jQueryMobile -- Collapsible
+
+63, 17/8/27 第63天学习HTML
+JavaScript -- jQueryMobile -- Event
+JavaScript -- jQueryMobile -- Grid
+JavaScript -- jQueryMobile -- ListView
+
+64, 17/8/28 第64天学习HTML
+JavaScript -- jQueryMobile -- Navbar
+JavaScript -- jQueryMobile -- Page
+JavaScript -- jQueryMobile -- Popup
+JavaScript -- jQueryMobile -- SelectMenu
+
+65, 17/8/29 第65天学习HTML
+JavaScript -- CreateJS
+                        -- EaselJS
+                        -- PreloadJS
+                        -- SoundJS
+                        -- TweenJS
+
+
+
+
+
+
+
