@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        HTML5与HTML4的区别
+
+            1,推出理由及目标
+
+                HTML5的出现,对于Web来说意义是非常重大的,因为它的意图是想要把目前Web上存在的各种问题一并解决掉。
+                Web浏览器之间的兼容性很低(html,css,JavaScript 换一个浏览器就失效了)
+                文档结构不够明确(例如 标题,正文 使用div 不明确)
+                Web应用程序的功能受到了限制
+
+            世界知名浏览器厂商对HTML5的支持
+                微软(IE),Google(Chrome),苹果(Safari),Opera,Mozilla(Firefox)
+                低端浏览器,IE9以下的(6,7,8) 不支持HTML5
+
+            2,语法的改变
+
+                内容类型(扩展名依然为html或htm, 类型text/html)
+                DOCTYPE声明(HTML4要明确指出哪个版本)
+                指定字符编码
+                (HTML4)<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+                (HTML5)<meta charset="UTF-8">
+                可以省略标记的元素
+                具有boolean值的属性(看下面input的例子)
+                省略引号(看下面input的例子)
+
+            3,新增的元素和废除的元素
+
+                新增的结构元素
+
+                    section(页面中的内容块,页眉,页脚,与h1-h6结合使用)
+                    article(页面中与上下文不相关的内容,例如博客中一篇文章)
+                    aside(article元素内容之外的,与article元素内容相关的辅助信息)
+                    header(页面中的一个内容区域块,通常用来表示标题)
+                    hgroup(整个页面的内容块进行结合)
+                    footer(页面中的一个内容区域块,通常用来表示脚部)
+                    nav(页面中导航链接的部分)
+                    figure(一段独立的流的内容)
+
+                新增的其它元素
+
+                    video,audio,embed,mark,progress,meter,time,ruby
+                    rt,rp,wbr,canvas,command,details,datalist,datagrid
+                    keypen,output,source,menu
+
+                新增的input元素的类型
+
+                email,url,number,range,Date Picker
+
+                废除的元素
+
+                能使用CSS替代的元素:basefont,big,center,font,s,tt,u等
+
+                不再使用frame框架(只支持iframe)
+
+                只有部分浏览器支持的元素
+
+                其它被废弃的元素
+
+            4,新增的属性和废除的属性
+
+                新增的属性
+
+                 表单相关的属性
+                 链接相关的属性
+                 其它属性
+
+               废除的属性
+
+            5,全局属性
+                contenteditable属性(允许用户编辑)
+                designMode属性(整个页面能否被编辑)
+                hidden属性
+                spellcheck属性(input和textarea语法检查)
+                tabindex属性(通过tab键获取焦点,Firefox可以)
+    -->
+
+    <!-- 前3个都是true,最后一个是false -->
+    <input type="checkbox" checked>
+    <input type="checkbox" checked="checked">
+    <input type="checkbox" checked="">
+    <input type="checkbox">
+
+    <input type="checkbox" checked=checked>
+
+    <h2>可编辑列表</h2>
+    <ul contenteditable="" tabindex="-1">
+        <li>列表1</li>
+        <li>列表2</li>
+    </ul>
+
+    <br />
+
+    <a href="#" tabindex="1">hello</a>
+    <a href="#" tabindex="3">hello</a>
+    <a href="#" tabindex="2">hello</a>
+
+
+</body>
+</html>
