@@ -64,12 +64,126 @@
         <!--默认提交-->
         <input type="submit" value="确定">
         <br/><br/>
-
-        
-
     </form>
 
     <textarea name="" title="个人信息" cols="30" rows="10">请再此填写个人信息</textarea>
+
+    <br /><br />
+
+
+    <!--
+    在HTML4中,表单内的从属元素必须书写在表单内部,而在HTML5中,可以把他们书写在页面上任何地方
+    然后为该元素指定一个form属性,属性值为该表单的id,这样就可以声明该元素从属于指定表单了。
+    -->
+
+
+    <form id="testform">
+        <input type="text">
+    </form>
+
+    <textarea form="testform" title="lala" name=""></textarea>
+
+
+    <!--
+    在HTML4中,一个表单内的所有元素只能通过表单的action属性被统一提交到另一个页面。
+    而在HTML5中可以为所有的提交按钮,增加不同的formaction属性,使单击不同的按钮时可以将表单提交到不同的页面.
+    -->
+
+    <form id="">
+        <input type="submit" name="s1" value="v1" formaction="xxx.jsp">提交到xxx.jsp页面
+        <input type="submit" name="s2" value="v2" formaction="xxx.jsp">提交到xxx.jsp页面
+    </form>
+
+    <!--
+    在HTML4中,一个表单内只能有一个action属性用来对表单内所有元素统一指定提交页面
+    所以每个表单内页只有一个method属性来统一指定提交方法。
+    在HTML5中,可以使用formmethod属性来对每一个表单元素分辨指定不同的提交方法(get,post)
+    -->
+
+    <form action="">
+        <input type="submit" name="s3" value="v3" formmethod="post" formaction="">
+        <input type="submit" name="s4" value="v4" formmethod="get" formaction="">
+    </form>
+
+    <!--
+    在HTML4中,表单元素具有一个enctype属性,该属性用于指定在表单发送到服务器之前应该如何对表单内的数据进行编码。
+    在HTML5中,可以使用formenctype属性对表单元素分别指定不同的编码方式。
+    -->
+
+    <form action="">
+        <!--表单数据中的空格被转化为+号,但不对表单数据中的特殊字符进行编码-->
+        <input type="text" formenctype="text/plain">
+        <!--不对字符进行编码,在使用包含文件上传控件的表单时必须使用该值-->
+        <input type="text" formenctype="multipart/form-data">
+        <!--发送编码所有字符,当表单元素的action属性为get时,浏览器则用当前的编码方式把表单数组转换为一个字符-->
+        <input type="text" formenctype="application/x-www-form-urlencoded">
+    </form>
+
+    <!--
+    在HTML4中,表单元素具有一个target属性,该属性用于指定在何处打开变淡提交后所需加载的页面。
+    在HTML5中,可以对多个提交按钮分别使用formtarget属性来指定提交后在何处打开所需加载的页面
+    -->
+
+    <form action="">
+        <input type="submit" formtarget="_blank">
+        <input type="submit" formtarget="_self">
+        <input type="submit" formtarget="_parent">
+        <input type="submit" formtarget="_top">
+        <input type="submit" formtarget="framename">
+    </form>
+
+    <!--
+    autofocus属性
+
+    为文本框、选择框或按钮键加上autofocues属性,当页面打开时,该空间自动获取的光标焦点。
+    -->
+
+    <form action="">
+        <input type="text"></intput>
+        <input type="text" autofocus>
+    </form>
+
+    <!--
+    required属性
+
+    HTML5中新增的required属性可以应用在大多数输入元素上,在提交时,如果元素中内容为空白,则不允许提交
+    同时在浏览器中显示信息提示文字
+    -->
+
+    <form action="">
+        <input type="text" required>
+        <button type="submit">提交</button>
+    </form>
+
+    <!--
+    labels属性
+
+    在HTML5中,为所有可使用的标签的表单元素、button、select元素等,定义一个labels属性
+    属性值为一个NodeList对象代表该元素所绑定的标签元素所构成的集合
+    -->
+
+     <script>
+        function Validate() {
+            var txtName = document.getElementById("txt_name");
+            var button = document.getElementById("btnValidate");
+            var form = document.getElementById("lalal");
+            if (txtName.value.trim()=="") {
+                var label = document.createElement("label");
+                label.setAttribute("for", "txt_name");
+                form.insertBefore(label, button);
+                txtName.labels[1].innerHTML = "请输入姓名";
+                txtName.labels[1].setAttribute("style", "font-size:9px;color:red");
+            }
+        }
+    </script>
+
+    <form id="lalal">
+        <label for="txt_name">姓名:</label>
+        <input id="txt_name">
+        <input type="button" id="btnValidate" value="验证" onclick="Validate()">
+    </form>
+
+
 
 </body>
 </html>
